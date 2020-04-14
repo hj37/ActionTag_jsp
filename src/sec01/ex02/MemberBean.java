@@ -3,10 +3,8 @@ package sec01.ex02;
 import java.sql.Date;
 
 public class MemberBean {
-	private int number;//기본숫자1을 저장 
 	
-	private Integer num; //<-- 1이 오토박싱되어 new Integer("1");
-//										//박싱
+
 	private String id, pwd, name, email;
 	private Date joinDate;
 	
@@ -15,16 +13,62 @@ public class MemberBean {
 	
 	public MemberBean() {}
 
-	public MemberBean(int number, Integer num, String id, String pwd, String name, String email, Date joinDate,
+	public MemberBean(String id, String pwd, String name, String email, Date joinDate,
 			Address addr) {
-		super();
-		this.number = number;
-		this.num = num;
+	
 		this.id = id;
 		this.pwd = pwd;
 		this.name = name;
 		this.email = email;
 		this.joinDate = joinDate;
+		this.addr = addr;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getPwd() {
+		return pwd;
+	}
+
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Date getJoinDate() {
+		return joinDate;
+	}
+
+	public void setJoinDate(Date joinDate) {
+		this.joinDate = joinDate;
+	}
+
+	public Address getAddr() {
+		return addr;
+	}
+
+	public void setAddr(Address addr) {
 		this.addr = addr;
 	}
 	
