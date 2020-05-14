@@ -10,10 +10,9 @@
 <body>
 
 	<!-- 회원가입창에서 회원정보를 입력한 후 member.jsp로 전송하도록 memberForm.html을 작성합니다. -->
-	<form action="member9.jsp" method="post">
+	<form action="member_action.jsp" method="post">
 	
-		<h1 style="text-align:center;">				<td>${param.id}</td>
-		회원 가입창</h1>
+		<h1 style="text-align:center;">회원 가입창</h1>
 	
 		<table  align="center">
 			<tr>
